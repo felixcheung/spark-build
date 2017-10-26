@@ -46,7 +46,7 @@ RUN apt-get install --no-install-recommends -y libcurl4-openssl-dev libxml2-dev 
     Rscript -e "devtools::install_github('jimhester/lintr')"
 
 RUN apt-get install --no-install-recommends -y software-properties-common && \
-    apt-add-repository ppa:brightbox/ruby-ng && \
+    apt-add-repository -y ppa:brightbox/ruby-ng && \
     apt-get update && \
     apt-get install --no-install-recommends -y ruby2.3 ruby2.3-dev && \
     gem install jekyll --no-rdoc --no-ri && \
